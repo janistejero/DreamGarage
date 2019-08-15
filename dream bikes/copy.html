@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dream Vehicles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+        <!-- Scripts -->
+        <script src="script.js"></script>
+    </head>
+    <body style="w3-">
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large"
+            onclick="w3_close()">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Bikes</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Cars</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Specs</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Pricelist</a>
+        </div>
+
+        <div id="main">
+            <div class="w3-teal">
+              <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+              <div class="w3-container">
+                <h1 class="w3-center">My Dream Garage</h1>
+              </div>
+            </div>
+
+            <!-- Page Content -->
+            <div class="page-space"></div>
+            <h2 class="w3-center">Welcome</h2>
+            <div class="w3-container w3-card" id="welcome-text">
+                <p>This page shows what my dream garage looks like. Every car & motorcycle I dream of owning is shown below. I've created this page just to keep track on all the machines since there are so many. Having a garage filled with nice cars and motorcycles has been a dream of mine since young age. 
+                </p>
+                <p class="w3-center w3-light-gray w3-xxlarge w3-serif"><i>"If I will ever own all of them?"</i></p>
+            </div>
+            
+            <!-- Indian Chief FTR 1200 S -->
+            <div class="page-space"></div>
+            <h2 class="w3-center">Indian Chief FTR 1200 S</h2>
+            <div class="w3-content w3-display-container w3-gray" style="height: 70%; width: 70%;">
+                <img class="indian" src="images/indian_ftr_1200/indian_chief.jpg" style="width:100%">
+                <img class="indian" src="images/indian_ftr_1200/indian_chief3.jpg" style="width:100%">
+                <img class="indian" src="images/indian_ftr_1200/indian_chief4.jpg" style="width:100%">
+                <img class="indian" src="images/indian_ftr_1200/indian_chief2.jpg" style="width:100%">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'indian')">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'indian')">&#10095;</button>
+            </div>
+            
+            <!-- Aprilia Tuono V4 1100 -->
+            <div class="page-space"></div>
+            <h2 class="w3-center">Aprilia Tuono V4 1100</h2>
+            <div class="w3-content w3-display-container w3-red" style="height: 70%; width: 70%;">
+                <img class="aprilia" src="images/aprilia_tuno_1100/aprilia_tuono.jpg" style="width:100%">
+                <img class="aprilia" src="images/aprilia_tuno_1100/aprilia_tuono2.jpg" style="width:100%">
+                <img class="aprilia" src="images/aprilia_tuno_1100/aprilia_tuono3.jpg" style="width:100%">
+                <img class="aprilia" src="images/aprilia_tuno_1100/aprilia_tuono4.jpg" style="width:100%">
+                <img class="aprilia" src="images/aprilia_tuno_1100/aprilia_tuono5.jpg" style="width:100%">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'aprilia')">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'aprilia')">&#10095;</button>
+            </div>
+            
+            <!-- Ducati Hypermotard 939 -->
+            <div class="page-space"></div>
+            <h2 class="w3-center">Ducati Hypermotard 939</h2>
+            <div class="w3-content w3-display-container w3-red" style="height: 70%; width: 70%;">
+                <img class="ducati" src="images/ducati_hypermotard/ducati_hypermotard4.jpg" style="width: 100%">
+                <img class="ducati" src="images/ducati_hypermotard/ducati_hypermotard.jpg" style="width:100%">
+                <img class="ducati" src="images/ducati_hypermotard/ducati_hypermotard2.jpg" style="width:100%">
+                <img class="ducati" src="images/ducati_hypermotard/ducati_hypermotard3.jpg" style="width:100%">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'ducati')">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'ducati')">&#10095;</button>
+            </div>
+            
+            <!-- KTM Super Duke 1290 R -->
+            <div class="page-space"></div>
+            <h2 class="w3-center">KTM Super Duke 1290 R</h2>
+            <div class="w3-content w3-display-container w3-red" style="height: 70%; width: 70%;">
+                <img class="ktm" src="images/ktm_superduke/ktm_superduke.jpg" style="width: 100%">
+                <img class="ktm" src="images/ktm_superduke/ktm_superduke2.jpg" style="width: 100%">
+                <img class="ktm" src="images/ktm_superduke/ktm_superduke3.jpg" style="width: 100%">
+                <img class="ktm" src="images/ktm_superduke/ktm_superduke4.jpg" style="width: 100%">
+                <img class="ktm" src="images/ktm_superduke/ktm_superduke5.jpg" style="width: 100%">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'ktm')">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'ktm')">&#10095;</button>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div id="footer-maker"></div>
+        <footer>
+            <div class="w3-teal w3-container" id="footer">
+                <p class="w3-center">Site created by Janis, 07.08.2019
+                </p>
+            </div>
+        </footer>  
+    </body>
+    
+</html>
