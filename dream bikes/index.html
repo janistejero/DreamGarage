@@ -7,6 +7,7 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
         
         <!-- Scripts -->
         <script src="script.js"></script>
@@ -31,20 +32,25 @@
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
+        
+        <!-- some space to top -->
+        <div class="w3-container w3-flat-midnight-blue" style="padding-top: 10px;"></div>
+        
+        
         <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
             <button class="w3-bar-item w3-button w3-large"
             onclick="w3_close()">Close &times;</button>
             <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Bikes</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Cars</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Specs</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Pricelist</a>
+            <a href="#bikelist" class="w3-bar-item w3-button w3-mobile">Bikes</a>
+            <a href="#carlist" class="w3-bar-item w3-button w3-mobile">Cars</a>
+            <a href="#specs" class="w3-bar-item w3-button w3-mobile">Specs</a>
+            <a href="#pricelist" class="w3-bar-item w3-button w3-mobile">Pricelist</a>
         </div>
 
         
         <div id="main">
-            <div class="w3-teal">
-              <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container w3-flat-midnight-blue">
+              <button id="openNav" class="w3-button w3-container w3-flat-midnight-blue w3-xlarge" onclick="w3_open()">&#9776;</button>
               <div class="w3-container">
                 <h1 class="w3-center">My Dream Garage</h1>
               </div>
@@ -52,32 +58,26 @@
 
             <!-- Page Content -->
             <div class="page-space"></div>
-            <h2 class="w3-center">Welcome</h2>
-            <div class="w3-container w3-card" id="welcome-text">
+            <h1 class="w3-center the-bikes" style="font-family: 'Lucida Console', Times, serif;">Welcome!</h1>
+            <div class="w3-container w3-card" id="welcome-text"><br/>
+                <!-- card -->
                 <p>This page shows what my dream garage looks like. Every car & motorcycle I dream of owning is shown below. I've created this page just to keep track on all the machines since there are so many. Having a garage filled with nice cars and motorcycles has been a dream of mine since young age. 
                 </p>
-                <p class="w3-center w3-light-gray w3-xxlarge w3-serif"><i>"If I will ever own all of them?"</i></p>
+                <p class="w3-center w3-light-gray w3-xxlarge w3-serif"><i>"I will own all of them at some point."</i></p><br/>
             </div>
+            <br/><br/>
+            <hr>
+            <h1 class="w3-center the-bikes"><a id="bikelist">The bikes</a></h1>
             
-            
-            <!-- Indian Chief FTR 1200 S -->
-            <div class="page-space"></div>
-            <div class="w3-half">
-                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
-                    <h2 class="w3-center">Indian Chief FTR 1200 S</h2>
-                    <img class="indian" src="images/indian_ftr_1200/indian_chief.jpg" style="width:100%">
-                    <img class="indian" src="images/indian_ftr_1200/indian_chief3.jpg" style="width:100%">
-                    <img class="indian" src="images/indian_ftr_1200/indian_chief4.jpg" style="width:100%">
-                    <img class="indian" src="images/indian_ftr_1200/indian_chief2.jpg" style="width:100%">
-                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'indian')">&#10094;</button>
-                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'indian')">&#10095;</button>
-                </div>
-            </div>
+            <!-- Legal Disclaimer -->
+            <div style="padding: 0px 20%">
+                <h6 class="w3-center w3-opacity">"Disclaimer: I do not own any of the following pictures. All of them have been downloaded from Scout24 Schweiz AG&copy;. All rights belong to the owner of the pictures. This website is not for commercial use, solely for my personal interest."</h6>
+            </div><br/>
             
             <!-- Aprilia Tuono V4 1100 -->
             <div class="w3-half">
                 <div class="w3-display-container w3-light-gray w3-padding w3-margin">
-                    <h2 class="w3-center">Aprilia Tuono V4 1100</h2>
+                    <h2 class="w3-center bike-name">Aprilia Tuono V4 1100</h2>
                     <img class="aprilia" src="images/aprilia_tuno_1100/aprilia_tuono.jpg" style="width:100%">
                     <img class="aprilia" src="images/aprilia_tuno_1100/aprilia_tuono2.jpg" style="width:100%">
                     <img class="aprilia" src="images/aprilia_tuno_1100/aprilia_tuono3.jpg" style="width:100%">
@@ -88,52 +88,10 @@
                 </div>
             </div>
             
-            <!-- Ducati Hypermotard 939 -->
-            <div class="page-space"></div>
+             <!-- BMW S1000 RR -->
             <div class="w3-half">
                 <div class="w3-display-container w3-light-gray w3-padding w3-margin">
-                    <h2 class="w3-center">Ducati Hypermotard 939</h2>
-                    <img class="ducati" src="images/ducati_hypermotard/ducati_hypermotard4.jpg" style="width: 100%">
-                    <img class="ducati" src="images/ducati_hypermotard/ducati_hypermotard.jpg" style="width:100%">
-                    <img class="ducati" src="images/ducati_hypermotard/ducati_hypermotard2.jpg" style="width:100%">
-                    <img class="ducati" src="images/ducati_hypermotard/ducati_hypermotard3.jpg" style="width:100%">
-                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'ducati')">&#10094;</button>
-                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'ducati')">&#10095;</button>
-                </div>
-            </div>
-            
-            
-            <!-- KTM Super Duke 1290 R -->
-            <div class="w3-half">
-                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
-                    <h2 class="w3-center">KTM Super Duke 1290 R</h2>
-                    <img class="ktm" src="images/ktm_superduke/ktm_superduke.jpg" style="width: 100%">
-                    <img class="ktm" src="images/ktm_superduke/ktm_superduke2.jpg" style="width: 100%">
-                    <img class="ktm" src="images/ktm_superduke/ktm_superduke3.jpg" style="width: 100%">
-                    <img class="ktm" src="images/ktm_superduke/ktm_superduke4.jpg" style="width: 100%">
-                    <img class="ktm" src="images/ktm_superduke/ktm_superduke5.jpg" style="width: 100%">
-                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'ktm')">&#10094;</button>
-                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'ktm')">&#10095;</button>
-                </div>
-            </div>
-            
-            
-            <!-- BMW S1000 XR -->
-            <div class="w3-half">
-                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
-                    <h2 class="w3-center">BMW S1000XR</h2>
-                    <img class="bmw1" src="images/bmw_s1000xr/bmw_s1000xr.jpg" style="width: 100%">
-                    <img class="bmw1" src="images/bmw_s1000xr/bmw_s1000xr2.jpg" style="width: 100%">
-                     <img class="bmw1" src="images/bmw_s1000xr/bmw_s1000xr3.jpg" style="width: 100%">
-                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'bmw1')">&#10094;</button>
-                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'bmw1')">&#10095;</button>
-                </div>
-            </div>
-            
-            <!-- BMW S1000 RR -->
-            <div class="w3-half">
-                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
-                    <h2 class="w3-center">BMW S1000 RR</h2>
+                    <h2 class="w3-center bike-name">BMW S1000 RR</h2>
                     <img class="bmw2" src="images/bmw_s1000rr/bmw_s1000rr.jpg" style="width: 100%">
                     <img class="bmw2" src="images/bmw_s1000rr/bmw_s1000rr2.jpg" style="width: 100%">
                     <img class="bmw2" src="images/bmw_s1000rr/bmw_s1000rr3.jpg" style="width: 100%">
@@ -145,13 +103,138 @@
                     <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'bmw2')">&#10095;</button>
                 </div>
             </div>
+            
+            <!-- BMW S1000 XR -->
+            <div class="w3-half">
+                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
+                    <h2 class="w3-center bike-name">BMW S1000XR</h2>
+                    <img class="bmw1" src="images/bmw_s1000xr/bmw_s1000xr.jpg" style="width: 100%">
+                    <img class="bmw1" src="images/bmw_s1000xr/bmw_s1000xr2.jpg" style="width: 100%">
+                    <img class="bmw1" src="images/bmw_s1000xr/bmw_s1000xr3.jpg" style="width: 100%">
+                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'bmw1')">&#10094;</button>
+                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'bmw1')">&#10095;</button>
+                </div>
+            </div>
+        
+            <!-- Ducati Hypermotard 939 -->
+            <div class="page-space"></div>
+            <div class="w3-half">
+                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
+                    <h2 class="w3-center bike-name">Ducati Hypermotard 939</h2>
+                    <img class="ducati1" src="images/ducati_hypermotard/ducati_hypermotard.jpg" style="width: 100%">
+                    <img class="ducati1" src="images/ducati_hypermotard/ducati_hypermotard3.jpg" style="width: 100%">
+                    <img class="ducati1" src="images/ducati_hypermotard/ducati_hypermotard4.jpg" style="width: 100%">
+                    <img class="ducati1" src="images/ducati_hypermotard/ducati_hypermotard2.jpg" style="width: 100%">
+                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'ducati1')">&#10094;</button>
+                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'ducati1')">&#10095;</button>
+                </div>
+            </div>
+            
+             <!-- Ducati XDiavel S 1260 -->
+            <div class="page-space"></div>
+            <div class="w3-half">
+                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
+                    <h2 class="w3-center bike-name">Ducati XDiavel S 1260</h2>
+                    <img class="ducati2" src="images/ducati_xdiavel_1260/ducati_xdiavel.jpg" style="width: 100%">
+                    <img class="ducati2" src="images/ducati_xdiavel_1260/ducati_xdiavel2.jpg" style="width: 100%">
+                    <img class="ducati2" src="images/ducati_xdiavel_1260/ducati_xdiavel3.jpg" style="width: 100%">
+                    <img class="ducati2" src="images/ducati_xdiavel_1260/ducati_xdiavel4.jpg" style="width: 100%">
+                    <img class="ducati2" src="images/ducati_xdiavel_1260/ducati_xdiavel5.jpg" style="width: 100%">
+                    <img class="ducati2" src="images/ducati_xdiavel_1260/ducati_xdiavel6.jpg" style="width: 100%">
+                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'ducati2')">&#10094;</button>
+                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'ducati2')">&#10095;</button>
+                </div>
+            </div>
+           
+             <!-- Indian Chief FTR 1200 S -->
+            <div class="page-space"></div>
+            <div class="w3-half">
+                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
+                    <h2 class="w3-center bike-name">Indian Chief FTR 1200 S</h2>
+                    <img class="indian" src="images/indian_ftr_1200/indian_chief.jpg" style="width: 100%">
+                    <img class="indian" src="images/indian_ftr_1200/indian_chief3.jpg" style="width: 100%">
+                    <img class="indian" src="images/indian_ftr_1200/indian_chief4.jpg" style="width: 100%">
+                    <img class="indian" src="images/indian_ftr_1200/indian_chief2.jpg" style="width: 100%">
+                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'indian')">&#10094;</button>
+                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'indian')">&#10095;</button>
+                </div>
+            </div>
+            
+              <!-- Ducati Panigale 1103 V4 -->
+            <div class="page-space"></div>
+            <div class="w3-half">
+                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
+                    <h2 class="w3-center bike-name">Ducati Panigale 1103 V4</h2>
+                    <img class="ducati3" src="images/ducati_panigale_v4/ducati_panigale_v4.jpg" style="width: 100%">
+                    <img class="ducati3" src="images/ducati_panigale_v4/ducati_panigale_v42.jpg" style="width: 100%">
+                    <img class="ducati3" src="images/ducati_panigale_v4/ducati_panigale_v43.jpg" style="width: 100%">
+                    <img class="ducati3" src="images/ducati_panigale_v4/ducati_panigale_v44.jpg" style="width: 100%">
+                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'ducati3')">&#10094;</button>
+                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'ducati3')">&#10095;</button>
+                </div>
+            </div>
+            
+            <!-- KTM Super Duke 1290 R -->
+            <div class="w3-half">
+                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
+                    <h2 class="w3-center bike-name">KTM Super Duke 1290 R</h2>
+                    <img class="ktm" src="images/ktm_superduke/ktm_superduke.jpg" style="width: 100%">
+                    <img class="ktm" src="images/ktm_superduke/ktm_superduke2.jpg" style="width: 100%">
+                    <img class="ktm" src="images/ktm_superduke/ktm_superduke3.jpg" style="width: 100%">
+                    <img class="ktm" src="images/ktm_superduke/ktm_superduke4.jpg" style="width: 100%">
+                    <img class="ktm" src="images/ktm_superduke/ktm_superduke5.jpg" style="width: 100%">
+                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'ktm')">&#10094;</button>
+                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'ktm')">&#10095;</button>
+                </div>
+            </div>
+            
+             <!-- Triumph Street Triple 675 R -->
+            <div class="w3-half">
+                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
+                    <h2 class="w3-center bike-name">Triumph Street Triple 675 R</h2>
+                    <img class="triumph1" src="images/triumph_streettriple_675r/triumph_streetriple_675r.jpg" style="width: 100%">
+                    <img class="triumph1" src="images/triumph_streettriple_675r/triumph_streetriple_675r2.jpg" style="width: 100%">
+                    <img class="triumph1" src="images/triumph_streettriple_675r/triumph_streetriple_675r3.jpg" style="width: 100%">
+                    <img class="triumph1" src="images/triumph_streettriple_675r/triumph_streetriple_675r4.jpg"style="width: 100%">
+                    <img class="triumph1" src="images/triumph_streettriple_675r/triumph_streetriple_675r5.jpg" style="width: 100%">
+                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'triumph1')">&#10094;</button>
+                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'triumph1')">&#10095;</button>
+                </div>
+            </div>
+            
+             <!-- Triumph Thruxton 1200 R -->
+            <div class="w3-half">
+                <div class="w3-display-container w3-light-gray w3-padding w3-margin">
+                    <h2 class="w3-center bike-name">Triumph Thruxton 1200 R</h2>
+                    <img class="triumph2" src="images/triumph_thruxton_1200r/triumph_thruxton_1200r.jpg" style="width: 100%">
+                    <img class="triumph2" src="images/triumph_thruxton_1200r/triumph_thruxton_1200r2.jpg" style="width: 100%">
+                    <img class="triumph2" src="images/triumph_thruxton_1200r/triumph_thruxton_1200r3.jpg" style="width: 100%">
+                    <img class="triumph2" src="images/triumph_thruxton_1200r/triumph_thruxton_1200r4.jpg" style="width: 100%">
+                    <button class="w3-button w3-dark-gray w3-display-left" onclick="plusDivs(-1, 'triumph2')">&#10094;</button>
+                    <button class="w3-button w3-dark-gray w3-display-right" onclick="plusDivs(1, 'triumph2')">&#10095;</button>
+                </div>
+            </div>
+            
+            <!-- cars -->
+            <hr>
+            <h1 class="w3-center"><a id="carlist">The Cars</a></h1>
+            
+            <!-- specifications -->
+            <hr>
+            <h1 class="w3-center"><a id="specs">The Specs</a></h1>
+            
+            <!-- pricelist -->
+            <hr>
+            <h1 class="w3-center"><a id="pricelist">The pricelist</a></h1>
+            
+            
         </div> <!-- /main -->
         
         
         
         <!-- Footer -->
         <div id="footer-maker"></div>
-            <div class="w3-teal w3-container" class="footer">
+            <div class="w3-container w3-flat-midnight-blue w3-container" class="footer">
                 <p class="w3-center">Site created by Janis, 07.08.2019
                 </p>
             </div>

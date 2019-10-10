@@ -2,10 +2,14 @@ var slideIndex = 1;
 var indices = new Map();
 indices.set("indian", 1);
 indices.set("aprilia", 1);
-indices.set("ducati", 1);
+indices.set("ducati1", 1);
+indices.set("ducati2", 1);
+indices.set("ducati3", 1);
 indices.set("ktm", 1);
 indices.set("bmw1", 1);
 indices.set("bmw2", 1);
+indices.set("triumph1", 1);
+indices.set("triumph2", 1);
 
 window.onload = function(){
     for (var [m, n] of indices) {
@@ -38,7 +42,7 @@ function showDivs(n, m) {
     var xIndex = indices.get(m);
     if (n > imgArr.length) {
         indices.set(m, 1)
-        xIndex = 1
+        xIndex = 1;
     }
     
     if (n < 1) {

@@ -16,15 +16,14 @@ html, body {
 .footer {
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: -250px;
   width: 100%;
   background-color: teal;
   color: white;
   text-align: center;
 }
-}
 
-.indian, .aprilia, .ducati, .ktm, .bmw1, .bmw2{
+.indian, .aprilia, .ducati1, .ducati2, .ducati3,  .ktm, .bmw1, .bmw2, .triumph1, .triumph2{
     display: none;
 }
 
@@ -34,4 +33,12 @@ html, body {
 
 p {
   font-family: "Lucida Console", Times, serif;
+}
+
+.bike-name{
+    font-size: 3vw;
+}
+
+.the-bikes{
+    font-size: 4vw;
 }
