@@ -58,7 +58,7 @@
 
             <!-- Page Content -->
             <div class="page-space"></div>
-            <h1 class="w3-center the-bikes" style="font-family: 'Lucida Console', Times, serif;">Welcome!</h1>
+            <h1 class="w3-center dynamic-title" style="font-family: 'Lucida Console', Times, serif;">Welcome!</h1>
             <div class="w3-container w3-card" id="welcome-text"><br/>
                 <!-- card -->
                 <p>This page shows what my dream garage looks like. Every car & motorcycle I dream of owning is shown below. I've created this page just to keep track on all the machines since there are so many. Having a garage filled with nice cars and motorcycles has been a dream of mine since young age. 
@@ -66,8 +66,8 @@
                 <p class="w3-center w3-light-gray w3-xxlarge w3-serif"><i>"I will own all of them at some point."</i></p><br/>
             </div>
             <br/><br/>
-            <hr>
-            <h1 class="w3-center the-bikes"><a id="bikelist">The bikes</a></h1>
+            <hr class="custom-hr">
+            <h1 class="w3-center dynamic-title"><a id="bikelist">The bikes</a></h1>
             
             <!-- Legal Disclaimer -->
             <div style="padding: 0px 20%">
@@ -214,17 +214,117 @@
                 </div>
             </div>
             
+            <!-- specifications -->
+            <hr class="custom-hr">
+            <h1 class="w3-center dynamic-title"><a id="specs">The Bike Specs</a></h1>
+            
+            
+            <!-- Aprilia Tuono V4 1100 Specs -->
+            <div class="w3-center">
+                 <button onclick="accordion('aprilia-tuono-specs')" class="w3-button w3-round-large w3-border w3-flat-midnight-blue spec-button" w3-center>Aprilia Tuono V4 1100</button> 
+            </div>
+           
+            <!-- Accordion -->
+            <div id="aprilia-tuono-specs" class="w3-hide w3-container w3-center specs">
+                <table class="w3-table w3-striped">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Engine</td>
+                        <td>65&#176; V-4 cylinder, 4-stroke, liquid cooled</td>
+                    </tr>
+                    <tr>
+                        <td>Engine Capacity</td>
+                        <td>1077cc</td>
+                    </tr>
+                    <tr>
+                        <td>Max Power</td>
+                        <td>175hp (129 kW) at 11'000rpm</td>
+                    </tr>
+                    <tr>
+                        <td>Max Torque</td>
+                        <td>121 Nm at 9'000rpm</td>
+                    </tr>
+                    <tr>
+                        <td>Dry weight</td>
+                        <td>185kg</td>
+                    </tr>
+                    <tr>
+                        <td>Fuel Consumption</td>
+                        <td>7.7L/100 km</td>
+                    </tr>
+                    <tr>
+                        <td>Fuel Tankk</td>
+                        <td>18.5L (inluding 4-litre reserve)</td>
+                    </tr>    
+                </table>
+                
+                <form action="https://www.aprilia.com/assets/aprilia-sites/master/models/moto/road/tuono-V4-1100-Factory/Tech/2019/EN_Aprilia_Tuono_V4_1100_Factory_tech_data/original/EN_Aprilia_Tuono_V4_1100_Factory_tech_data.pdf">
+                    <button id="aprilia-tuono-specs-btn" class="w3-btn w3-ripple w3-flat-midnight-blue w3-border w3-round-large">Full Specs</button>
+                </form>
+            </div>
+            
+            <!-- BMW S1000RR Specs -->
+            <div class="w3-center">
+                 <button onclick="accordion('bmw-s1000rr-specs')" class="w3-button w3-round-large w3-border w3-flat-midnight-blue spec-button" w3-center>BMW S1000RR</button> 
+            </div>
+           
+            <!-- Accordion -->
+            <div id="bmw-s1000rr-specs" class="w3-hide w3-container w3-center specs">
+                <table class="w3-table w3-striped">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Engine</td>
+                        <td>65&#176; Inline 4 cylinder, 4-stroke, liquid cooled</td>
+                    </tr>
+                    <tr>
+                        <td>Engine Capacity</td>
+                        <td>999cc</td>
+                    </tr>
+                    <tr>
+                        <td>Max Power</td>
+                        <td>199hp (146 kW) at 13'500rpm</td>
+                    </tr>
+                    <tr>
+                        <td>Max Torque</td>
+                        <td>113 Nm at 10'500rpm</td>
+                    </tr>
+                    <tr>
+                        <td>Dry weight</td>
+                        <td>202kg</td>
+                    </tr>
+                    <tr>
+                        <td>Fuel Consumption</td>
+                        <td>7.7L/100 km</td>
+                    </tr>
+                    <tr>
+                        <td>Fuel Tankk</td>
+                        <td>17.5L</td>
+                    </tr>    
+                </table>
+                
+                <form action="https://www.motorradsport-feil.de/en/motorrad-modell-bmw-s-1000-rr-3723-2018">
+                    <button id="bmw-s1000rr-specs-btn" class="w3-btn w3-ripple w3-flat-midnight-blue w3-border w3-round-large">Full Specs</button>
+                </form>
+            </div>
+            
+            
             <!-- cars -->
-            <hr>
-            <h1 class="w3-center"><a id="carlist">The Cars</a></h1>
+            <hr class="custom-hr">
+            <h1 class="w3-center dynamic-title"><a id="carlist">The Cars</a></h1>
             
             <!-- specifications -->
-            <hr>
-            <h1 class="w3-center"><a id="specs">The Specs</a></h1>
+            <hr class="custom-hr">
+            <h1 class="w3-center dynamic-title"><a id="specs">The Car Specs</a></h1>
             
             <!-- pricelist -->
-            <hr>
-            <h1 class="w3-center"><a id="pricelist">The pricelist</a></h1>
+            <hr class="custom-hr">
+            <h1 class="w3-center dynamic-title"><a id="pricelist">The Pricelist</a></h1>
             
             
         </div> <!-- /main -->

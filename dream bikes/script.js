@@ -55,3 +55,18 @@ function showDivs(n, m) {
     }
     imgArr[xIndex-1].style.display = "inline";
 }
+
+function accordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.setAttribute("style", "margin-top: 20px;")
+        var children = x.childNodes.length; 
+        console.log(children);
+        
+        var btn = document.getElementById(id+"-btn")
+        btn.setAttribute("style", "margin-top: 30px;");
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
