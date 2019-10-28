@@ -44,9 +44,11 @@ p {
 }
 
 .custom-hr {
-    border: 1px solid black;
-    margin-left: 1%;
-    margin-right: 1%;
+    border: none;
+    border-top: 1px solid;
+    border-color: #696969;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .spec-button{
